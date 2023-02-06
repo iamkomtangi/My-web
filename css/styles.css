@@ -11457,25 +11457,10 @@ header.masthead h1, header.masthead .h1 {
   opacity: 1;
 }
 
-#video_area {
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  position: absolute;
-}
-
-#background_video {
-    z-index: -1;
-    width: 100vw;
-    position: absolute;
-}
-
-@media screen and (max-aspect-ratio: 1219/685) {
-   #background_video {
-       width: auto;
-       height: 100vh;
-    }
+video {
+  /* override other styles to make responsive */
+  width: 100%    !important;
+  height: auto   !important;
 }
 
 

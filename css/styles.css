@@ -11456,3 +11456,26 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+#video_area {
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+}
+
+#background_video {
+    z-index: -1;
+    width: 100vw;
+    position: absolute;
+}
+
+@media screen and (max-aspect-ratio: 1219/685) {
+   #background_video {
+       width: auto;
+       height: 100vh;
+    }
+}
+
+
